@@ -60,7 +60,7 @@ var Player = function(x, y){
     this.y = y;
     this.width = 30;
     this.height = 30;
-    this.sprite = 'images/char-boy.png';
+    this.sprite = 'images/char-horn-girl.png';
 };
 
 
