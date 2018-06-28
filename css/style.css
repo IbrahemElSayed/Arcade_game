@@ -5,3 +5,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.header{
+  font-size: 3em;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px darkgrey outset;
+  color: darkred;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.counter{
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
