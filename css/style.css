@@ -1,3 +1,7 @@
 body {
     text-align: center;
+    background-image: url('https://res.cloudinary.com/ibrahem/image/upload/v1530198965/back-ground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
