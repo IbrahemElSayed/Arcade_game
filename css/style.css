@@ -60,7 +60,10 @@ body {
   box-shadow: 5px 5px 10px grey;
 }
 
-
+.winCount{
+  font-size: 1.5em;
+  color: navy;
+}
 
 
 

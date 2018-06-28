@@ -1,3 +1,10 @@
+//global variables
+
+const container = document.querySelector('.container');
+const repeatBtn = document.querySelector('.btnagain');
+const num = document.querySelector('#num');
+const winNum = document.querySelector('.winNum');
+let counter = 0;
 // Enemies our player must avoid
 // The constructor function of the enemy bugs
 var Enemy = function(x, y, speed) {
@@ -78,11 +85,25 @@ player.update = function(dt) {
   if (this.y === -12.5){
         this.x = 200;
         this.y = 400;
-        alert('done!');
         //win condition below
+        done();
+        num.textContent = counter;
+        winNum.textContent=counter;
     }
 
 };
+
+
+function done(){
+  counter ++;
+  let list = container.classList;
+  list.toggle('hidden');
+}
+
+repeatBtn.addEventListener('click', function(){
+  let list = container.classList;
+  list.toggle('hidden');
+});
 //rendering
 Player.prototype.render = function(){
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
